@@ -1,0 +1,28 @@
+
+    <section class="product">
+      <div class="product__photo">
+        <div class="photo-container">
+          <div class="photo-main">
+            <img src="{{selectedProduct.img}}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product__info">
+        <div class="title">
+          <h1>{{selectedProduct.title}}</h1>
+          <span>COD: 45999</span>
+        </div>
+        <div class="price">
+          $ <span>{{selectedProduct.price}}</span>
+        </div>
+        <div class="description">
+          <h3>Product Description</h3>
+          <ul>
+            <li>{{selectedProduct.ProductDes}}</li>
+            
+          </ul>
+        </div>
+        <button class="buy--btn">ADD TO CART</button>
+        <button class="buy--btn" (click)="navigate(selectedProduct.id)" >UPDATE PRODUCT</button>
+      </div>
+    </section>

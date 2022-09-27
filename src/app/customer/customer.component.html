@@ -1,0 +1,23 @@
+<div class="cards">
+  <article *ngFor="let customer of customers " class="card">  
+    
+        <img [src]="customer.img"  alt="">
+        <div class="close" (click)="deleteCustomer(customer.id)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+        </div>
+        <div class="content">
+          <h2>{{customer.name}}</h2>
+          <h4>{{customer.email}}</h4>
+          <p>{{customer.Phone}} </p>
+        </div>
+       
+        <div class="but"><button  (click)="onViewDetail(customer.id)" class="bn632-hover bn28 b">View Details</button></div>
+    </article>
+
+</div>
+
+<div class="cove"><a class="anchor"><button (click)="navigate()" class="bn632-hover bn28">Add customer</button></a></div>
+
+
+

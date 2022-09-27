@@ -1,0 +1,26 @@
+
+    <section class="product">
+        <div class="product__photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <img src="{{selectedCustomer.img}}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product__info">
+          <div class="title">
+            <h1>{{selectedCustomer.name}}</h1>
+          </div>
+          <div class="price">
+            <span>{{selectedCustomer.Phone}}</span>
+          </div>
+          <div class="description">
+            <h3>Email</h3>
+            <ul>
+              <li>{{selectedCustomer.email}}</li>
+            </ul>
+          </div>
+          <button class="buy--btn" (click)="navigate(selectedCustomer.id)" >UPDATE CUSTOMER INFO</button>
+        </div>
+      </section>
+  

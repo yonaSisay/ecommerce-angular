@@ -1,0 +1,27 @@
+
+
+
+<div class="cards">
+  <article *ngFor="let product of products " class="card">  
+    
+        <img [src]="product.img"  alt="">
+        <div class="close" (click)="deleteProduct(product.id)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+        </div>
+        <div class="content">
+          <h2>{{product.title}}</h2>
+          <h4>$ {{product.price}}</h4>
+          <p>{{product.ProductDes}}</p>
+        </div>
+       
+        <button (click)="onViewDetails(product.id)" class="buy--btn">View Details</button>
+    </article>
+
+</div>
+
+<a class="anchor"><button (click)="navigate()" class="bn632-hover bn28">Add Product</button></a>
+
+
+
+

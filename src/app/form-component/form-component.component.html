@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="product">
+    <div class="product-pop">
+     <div class="close" routerLink="/product">
+       <div class="bar-1"></div>
+       <div class="bar-2"></div>
+     </div>
+     
+       <div class="product-detail">
+        <form  (ngSubmit)="addProduct()" #f=ngForm class="form" action="/action_page.php">
+          <h2 class="txt">Add new Product</h2>
+          <label for="fname">Product name</label>
+          <input type="text" [(ngModel)]="pushProduct.title" id="fname" name="firstname"  #name="ngModel"[placeholder]="selectedProduct.title"> 
+          <label for="lname" type="number">Product price</label>
+          <input type="text" [(ngModel)]="pushProduct.price" id="lname" name="lastname" #name="ngModel" [placeholder]="selectedProduct.price">
+          <label for="pinfo">Product description</label>
+          <input [(ngModel)]="pushProduct.ProductDes" type="text" #name="ngModel" name="product description" id="fname" [placeholder]="selectedProduct.ProductDes">
+          <label for="pinfo">Product Image</label>
+          <input [(ngModel)]="pushProduct.img" type="text" #name="ngModel" name="product description" id="fname" placeholder="Copy the image url">
+          <div class="submit"><input type="submit" value="Submit"></div> 
+        </form>
+          
+       </div>
+    </div>
+  </div>
+ </div>
+
+        
+  
